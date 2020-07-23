@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-		<div class="container-fluid p-0">
-			<div class="body">
-				<navigation />
-				<!-- <Homepage /> -->
-				<router-view></router-view>
-
+			<div class="container-fluid" style="background-color: #181818">
+				<div class="body">
+					<div v-if="loader">
+						<preloading /> -->
+						<!-- <router-view></router-view> -->
+					</div>
+					<div v-else>
+						<navigation />
+						<router-view></router-view>
+				</div>
 			</div>
 		</div>
   </div>
@@ -14,12 +18,30 @@
 <script>
 import navigation from './components/navigation'
 import Homepage from './pages/HomePage'
+import preloading from './components/preloading'
 export default {
-  name: 'App',
+	name: 'App',
   components: {
 		navigation,
-		Homepage
-  }
+		Homepage,
+		preloading
+	},
+	data(){
+		return {
+			loader : true
+		}
+	},
+	mounted(){
+		this.showToggle()
+	},
+	methods : {
+		showToggle(){
+			setTimeout(() => {
+				this.loader = false
+			},500)
+		}
+	}
+
 }
 </script>
 
@@ -28,4 +50,9 @@ export default {
 	/* background-color: #181818 */
 	background-color: #181818;
 }
+/* body{
+	height: 100%;
+   overflow-y: hidden;
+} */
+
 </style>

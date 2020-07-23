@@ -6,10 +6,15 @@
 			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 			<b-collapse id="nav-collapse" is-nav>
 				<b-navbar-nav class="ml-auto">
-					<b-nav-item href="#/" class="link-3 rev nav">Home</b-nav-item>
+					<!-- <b-nav-item href="#/" class="link-3 rev nav">Home</b-nav-item>
 					<b-nav-item href="#/work" class="link-3 rev nav">WORK</b-nav-item>
 
-					<b-nav-item href="#/about" class="link-3 edge rev">ABOUT</b-nav-item>
+					<b-nav-item href="#/about" class="link-3 edge rev">ABOUT</b-nav-item> -->
+					<b-nav-item class="link-3 rev nav" v-scroll-to="{ el: '#first', easing: 'ease-in-out' , duration: 300 ,offset: 0}">Home</b-nav-item>
+					<b-nav-item class="link-3 rev nav" v-scroll-to="{ el: '#secc', easing: 'ease-in-out' , duration: 600 ,offset: 0}">WORK</b-nav-item>
+
+					<b-nav-item class="link-3 edge rev" v-scroll-to="{ el: '#third', easing: 'ease-in-out' , duration: 1000 ,offset: 0}">ABOUT</b-nav-item>
+
 				</b-navbar-nav>
 			</b-collapse>
 		</b-navbar>
@@ -17,9 +22,24 @@
 </template>
 
 <style scoped>
-/* @media screen and (max-width: 479px){
+
+.text-block-14 {
+  margin-top: 0px;
+  margin-bottom:0px;
+  /* padding-top: 4px; */
+	font-family: 'Teko', sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+@media screen and (max-width: 479px){
 	.w-container {
 			max-width: none;
+
+	}
+	.text-block-14{
+		font-size:14px;
 	}
 }
 @media screen and (max-width: 991px){
@@ -35,18 +55,9 @@
 	padding:0px;
 	border:0px;
 
-} */
-
-.text-block-14 {
-  margin-top: 0px;
-  margin-bottom:0px;
-  /* padding-top: 4px; */
-	font-family: 'Teko', sans-serif;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 0px;
 }
+
+
 /* .div-box-14{
 	font-family: 'Teko', sans-serif;
 	color:#fff;

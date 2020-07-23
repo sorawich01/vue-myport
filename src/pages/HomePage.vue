@@ -1,27 +1,25 @@
 <template>
  	<div>
  		<div class="intro w-container">
-			 <div v-parallax="0.6"  class="spleft">
- 			<h1  class="heading">
- 				PORTFOLIO
- 			</h1>
- 			<img src="https://uploads-ssl.webflow.com/5b0eb11723332d2455b73469/5b91c9bcae89e57253d599a9_horizontal-line.svg" alt="" class="image">
- 			<div class="paragraph"> Hello! I am Sorawich Thamtarakul, </div>
- 			<div class="paragraph p2"> a computer engineering </div>
+ 			<div class="spleft">
+ 				<h1 class="heading">
+ 					PORTFOLIO
+ 				</h1>
+ 				<img src="https://uploads-ssl.webflow.com/5b0eb11723332d2455b73469/5b91c9bcae89e57253d599a9_horizontal-line.svg"
+ 					alt="" class="image">
+ 				<div class="paragraph"> Hello! I am Sorawich Thamtarakul, </div>
+ 				<div class="paragraph p2"> a computer engineering </div>
+ 			</div>
  		</div>
- 		</div>
-		 <div v-parallax="0.1" >
- 		<div class="cs-bg-div boosted-site">
- 			<div class="cs-text-block-div">
- 				<div class="cs-block-description">
-
+ 		<div>
+ 			<div class="cs-bg-div boosted-site">
+ 				<div class="cs-text-block-div">
+ 					<div class="cs-block-description">
+ 					</div>
  				</div>
  			</div>
- 			</div>
  		</div>
-
  	</div>
-
 </template>
 
 <script>
@@ -36,8 +34,8 @@ p{
 }
 @media screen and (max-width: 479px){
 	.w-container {
-			max-width: none;
-			margin-left: 75px;
+			max-width: auto;
+			margin-left: 15px;
 	}
 }
 @media screen and (max-width: 991px){
@@ -122,7 +120,7 @@ p{
 .paragraph {
     position: relative;
     z-index: 3;
-    width: 430px;
+    /* width: 430px; */
     margin-bottom: 0px;
     padding-top: 35px;
     font-family: Nunito, sans-serif;
@@ -137,7 +135,7 @@ p{
 .paragraph2 {
     position: relative;
     z-index: 3;
-    width: 430px;
+    /* width: 430px; */
     margin-bottom: 15px;
     font-family: Nunito, sans-serif;
     color: #868686;
@@ -152,7 +150,7 @@ h1 {
     font-weight: bold;
 }
 .heading {
-    width: 682px;
+    /* width: 682px; */
     margin-top: 150px;
     font-family: 'Archivo Black', sans-serif;
     color: #eba694;

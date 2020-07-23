@@ -8,9 +8,15 @@ Vue.use(Router)
 
 export default new Router({
 	routes:[
+		// {
+		// 	name : 'Home Page',
+		// 	path : '/',
+		// 	component: () => import("../pages/HomePage.vue"),
+
+		// },
 		{
 			name : 'Home Page',
-			path : '/',
+			path : '/homepage',
 			component: () => import("../pages/HomePage.vue"),
 
 		},
@@ -33,11 +39,17 @@ export default new Router({
 		},
 		{
 			name : 'Block chain',
-			path : '/work/blockchain',
+			path : '/blockchain',
 			component: () => import("../pages/blockchain.vue"),
 		},
+		{
+			name : 'onepage',
+			path : '/',
+			component: () => import('../pages/onepage.vue')
+		}
 
 
 
 	]
+
 })

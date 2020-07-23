@@ -4,15 +4,12 @@
 		<div class="work-body">
 			<div class="about-container">
 				<div class="work-section">
-
 					<div class="cs-bg-div">
 						<!-- <div class="cs-text-block-div"> -->
 							<div class="cs-block-description-about">
 								<div class="cs-block-title">
 									Get my Information from Firebase
 								</div>
-
-
 									<div class="row justify-content-center">
 										<div class="col-md-3">
 											<ViewButton Func="GetdataFromFirebase" @click.native="GetdataFromFirebase() , show = ! show"></ViewButton>
@@ -20,15 +17,10 @@
 										<div class="col-md-8">
 											<transition name="fade">
 											<div v-if="show">
-
-
-
-
-
 												<div class="row">
-													<div class="col-lg-7">
+													<div class="col-7">
 														<div class="inforfont">
-															<p class="inforfont head"> Myinfomation </p>
+															<p class="inforfont head"> My information </p>
 															<br>
 															<br>
 															<p> fullname : {{fullname}} </p>
@@ -38,7 +30,7 @@
 															<p> Date of birth : {{DoBd}} {{DoBm}} {{DoBy}} </p>
 														</div>
 													</div>
-													<div class="col-lg-4">
+													<div class="col-4">
 														<p class="inforfont head" style="margin-top:130px; font-size:35px;"> Please <br>scroll down</p>
 													</div>
 												</div>
@@ -55,7 +47,7 @@
 	</div>
 
 
-	<!-- <div v-if="show">
+	<div v-if="show">
 		<div class="about-body">
 			<div class="work-section">
 				<div v-parallax="-0.4">
@@ -69,14 +61,50 @@
 									<div class="paragraph"> Hello! I'm Sorawich Thamtarakul, </div>
 								</div>
 							</div>
+							<div>
 								<img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" width="510" sizes="(max-width: 767px) 100vw, 510px" class="image-9" style="">
+
+
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div> -->
+		<div class="about-body">
+			<div class="work-section">
+				<div v-parallax="-0.4">
+					<div class="cs-bg-div-white">
+						<div class="intro about-container">
+							<div class="cs-text-block-div">
+								<div class="cs-block-description">
+									<div class="paragraph" style="font-color:black; font-size:60px"> My information </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-body">
+			<div class="work-section">
+				<div v-parallax="-0.4">
+					<div class="cs-bg-div-white">
+						<div class="intro about-container">
+							<div class="cs-text-block-div">
+								<div class="cs-block-description">
+									<div class="paragraph" style="font-color:black; font-size:60px"> My Information </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+
+	</div>
 </div>
 </template>
 
@@ -272,7 +300,7 @@ p{
     transition: all 258ms ease;
     font-family: 'Teko', sans-serif;
     color: #a0a0a0;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 400;
     letter-spacing: 1px;
     text-decoration: none;

@@ -15,7 +15,7 @@
  					</div>
 				</div>
 
-				<div class="cs-bg-div cal-site1">
+				<div class="cs-bg-div cal-site1" style="margin-top: -100px; opacity:0.8;">
 					<div class="cs-text-block-div">
 						<div class="cs-block-description">
 							<div class="cs-brand">
@@ -28,15 +28,16 @@
  					</div>
 				</div>
 
-				<div class="cs-bg-div cal-site1">
+
+				<div class="cs-bg-div cal-site2">
 					<div class="cs-text-block-div">
-						<div class="cs-block-description">
+						<div class="cs-block-description" style="margin-left:200px">
 							<div class="cs-brand">
 							</div>
 							<div class="cs-block-title">
-								Front End Practice
+								My profile
 							</div>
-							<a href="#/" class="button-3 cs-block dark-bg">View</a>
+							<a href="#/about" class="button-3 cs-block dark-bg">View</a>
 						</div>
  					</div>
 				</div>
@@ -44,6 +45,7 @@
 		</div>
 	</div>
 </template>
+
 <script>
 export default {
 	methods:{
@@ -76,8 +78,13 @@ export default {
     background-image: url("../assets/calculator-bg.png");
 		/* opacity: 0.4; */
 }
+.cs-bg-div.cal-site2 {
+    background-image: url("../assets/bgport1.png");
+		    min-height: 100%;
+
+}
 .cs-bg-div.cal-site1 {
-    background-image: url("../assets/101534732_252896032604829_4153393749237374418_n.jpg");
+    background-image: url("../assets/bg1.png");
 
 }
 
@@ -133,5 +140,22 @@ export default {
     text-decoration: none;
     cursor: pointer;
     border-radius: 0;
+}
+
+.parallax{
+	/* The image used */
+
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body, html {
+  height: 100%;
 }
 </style>
